@@ -1,5 +1,4 @@
-# uswsgi-connection-pool-plugin
-# github-repo https://github.com/Abhi123B/uswsgi-connection-pool-plugin  
+# uswsgi-connection-pool-plugin 
 
 custom plugin for uwsgi that allows to pool connections between different endpoints.
 
@@ -23,7 +22,7 @@ It takes a config file as input parameter plugin-cgf-file, the cfg file accents 
    DB_HOST_ADDRESS 	the host addr to conn to	ipv4 address		DB_HOST_ADDRESS,127.0.0.1
    DB_PORT		the db port			integer			DB_PORT,5674
    NO_OF_CONNECTIOS	no of connections per rmqserver	integer			NO_OF_CONNECTIOS,5
-   RMQ_CONN_STR		the rabbitmq connection string	string			RMQ_CONN_STR,id,user:pass@127.0.0.1:5672/vhost
+   RMQ_CONN_STR		the rabbitmq connection string	string		RMQ_CONN_STR,id,user:pass@127.0.0.1:5672/vhost
    ZMQ_SOCK_ADDRESS	the ZMQ socket address		string			ZMQ_SOCK_ADDRESS,ipc:///tmp/feeds/0
 
 if USE_DB is false all db related configs are ignored and connection is made using RMQ_CONN_STR configs.
@@ -42,7 +41,7 @@ Dependencies
 ->zmq --- https://github.com/zeromq/libzmq
 ->pqxx --- http://pqxx.org/download/software/libpqxx/libpqxx-4.0.tar.gz
 
-all libraries needs to be compile with -fPIC flag , have added precompiled libraries if don't want to compile.
+all libraries needs to be compile with -fPIC flag , have added precompiled libraries for Ubuntu 14.04 in libs/libs.
 
 Installation 
 -> get the uwsgi source from above link or any other uwsgi source code
