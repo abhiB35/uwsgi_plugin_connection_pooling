@@ -1,6 +1,6 @@
 # uswsgi-connection-pool-plugin 
 
-custom plugin for uwsgi that allows to pool connections between different endpoints.
+custom plugin for uwsgi that allows to pool connections between different endpoints.This is generally intended to work alongside Django framework of uwsgi. For example on how to integrate it with django please mail @abhimanyu.bhowmik5@gmail.com.
 
 *Added support for connection-pool to rabbitmq servers, currently can only work with default exchanges
 *Added support to read configs from postgresql database
